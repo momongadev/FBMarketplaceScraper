@@ -54,7 +54,7 @@ def MarketplaceScraper():
         if not os.path.exists(context_storage):
             print("Log in manually")
             try:
-                page.wait_for_url("https://www.facebook.com/?sk=welcome", timeout=120000)
+                page.wait_for_url("https://www.facebook.com/", timeout=120000)
             except TimeoutError:
                 print("Login timeout expired")
 
